@@ -10,5 +10,5 @@ spec:
   volumeMode: Filesystem
   persistentVolumeReclaimPolicy: Retain
   nfs:
-    server: "NFS 서버 주소"
+    server: 192.168.16.28
     path: /nfs/registry

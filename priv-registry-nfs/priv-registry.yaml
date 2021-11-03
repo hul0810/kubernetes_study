@@ -20,6 +20,9 @@ spec:
         volumeMounts:
         - name: nfs-volume
           mountPath: /var/lib/registry
+        env:
+        - name: REGISTRY_STORAGE_DELETE_ENABLED
+          value: "true"
       volumes:
       - name: nfs-volume
         persistentVolumeClaim:

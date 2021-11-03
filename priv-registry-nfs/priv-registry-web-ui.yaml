@@ -22,3 +22,6 @@ spec:
           value: http://priv-registry-svc:5000/v2
         - name: REGISTRY_NAME
           value: priv-registry-svc:5000
+        - name: REGISTRY_READONLY
+          value: "false"
+
