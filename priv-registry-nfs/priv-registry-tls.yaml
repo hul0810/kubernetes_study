@@ -39,8 +39,8 @@ spec:
           mountPath: /certs
       volumes:
       - name: auth
-        configMap:
-          name: htpasswd
+        secret:
+          secretName: priv-reg-htpasswd
       - name: certs
-        secret: 
+        secret:
           secretName: priv-reg-tls
